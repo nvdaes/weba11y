@@ -16,6 +16,10 @@ import Navigable from '../complex/navigable';
 import Title from '../complex/title';
 import FocusOrder from '../complex/focusOrder';
 import LinkContext from '../complex/linkContext';
+import HeadingsAndLabels from '../complex/headingsAndLabels';
+import FocusVisible from '../complex/focusVisible';
+import SectionHeadings from '../complex/sectionHeadings';
+import InputModalities from '../complex/inputModalities';
 
 const Main = () => {
 	return (
@@ -39,6 +43,10 @@ const Main = () => {
 		<Title />
 		<FocusOrder />
 		<LinkContext />
+		<HeadingsAndLabels />
+		<FocusVisible />
+		<SectionHeadings />
+		<InputModalities />
 		</main>
 		</>
 	);
