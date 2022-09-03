@@ -20,6 +20,7 @@ import HeadingsAndLabels from '../complex/headingsAndLabels';
 import FocusVisible from '../complex/focusVisible';
 import SectionHeadings from '../complex/sectionHeadings';
 import InputModalities from '../complex/inputModalities';
+import LabelInName from '../complex/labelInName';
 
 const Main = () => {
 	return (
@@ -47,6 +48,7 @@ const Main = () => {
 		<FocusVisible />
 		<SectionHeadings />
 		<InputModalities />
+		<LabelInName />
 		</main>
 		</>
 	);
