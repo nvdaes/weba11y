@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ExternalLink from '../single/externalLink';
+import Checkbox from '../single/checkbox';
 
 const data = [
 	{id: 1, name: "armario"},
@@ -10,7 +11,7 @@ const data = [
 ]
 
 const List= (props) => {
-	const {submitText} = props;
+	const {submitText, reportResults} = props;
 	const filtered = data.filter((element) => {
 		if (!submitText) {
 			return element;
@@ -20,7 +21,7 @@ const List= (props) => {
 
 	return (
 		<>
-		<p role="status" aria-atomic="true">(Resultados de la búsqueda: {filtered.length})</p>
+		<p role={reportResults} aria-atomic="true">(Resultados de la búsqueda: {filtered.length})</p>
 		<ul>
 		{filtered.map((item) => (
 		<li key={item.id}>{item.name}</li>
@@ -33,6 +34,14 @@ const List= (props) => {
 const StatusMessages = () => {
 	const [searchText, setSearchText] = useState("");
 const [submitText, setSubmitText] = useState("");
+const [reportResults, setReportResults] = useState("status");
+	const handleCheckboxChange = (e) => {
+		if (e.target.checked) {
+			setReportResults("presentation");
+		} else {
+			setReportResults("status");
+		}
+	}
 	const handleChange = (e) => {
 		setSearchText(e.target.value);
 	}
@@ -47,12 +56,12 @@ const [submitText, setSubmitText] = useState("");
 		<p>Para contenido implementado mediante lenguajes de marcado, los mensajes de estado pueden ser interpretados por distintas herramientas tecnológicas por medio del rol o las propiedades, de modo que puedan ser mostrados al usuario por las tecnologías de apoyo sin recibir el foco.</p>
 		</blockquote>
 		<form onSubmit={handleSubmit}>
-		<label>Introducir texto para buscar (muebles):
+		<Checkbox label="Silenciar indicación de resultados" onChange={handleCheckboxChange} />		<label>Introducir texto para buscar (muebles):
 		<input type="search" role="search" id="search" onChange={handleChange} />
 		</label>
 		<input type="submit" value="Buscar" />
 		</form>
-		<List submitText={submitText}/>
+		<List submitText={submitText} reportResults={reportResults} />
 		</>
 	)
 }
