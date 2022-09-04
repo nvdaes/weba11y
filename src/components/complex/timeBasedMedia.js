@@ -10,14 +10,14 @@ const TimeBasedMedia = () => {
 		<p>El contenido multimedia puede ser pregrabado o en tiempo real, y existen criterios de accesibilidad para ambas modalidades.</p>
 		<p>Para hacer accesible el contenido multimedia puede utilizarse, en función de si se trata de audio, vídeo o ambos:</p>:
 		<ul>
-		<li>transcripciones estructuradas correctamente (por ejemplo, en HTML), que podrán ser leídas y revisadas con NVDA, mediante voz y braille;</li>
+		<li>transcripciones estructuradas correctamente (por ejemplo, en <abbr title="Hypertext Markup Language">HTML</abbr>), que podrán ser leídas y revisadas mediante voz y braille;</li>
 		<li>subtítulos;</li>
 		<li>lengua de signos;</li>
 		<li>audiodescripción (simultánea o ampliada).</li>
 		</ul>
 		<p><a href="https://www.w3.org/WAI/media/av/transcripts" hrefLang="en" lang="en" target="_blank"
 		rel="noopener noreferrer"
-		>Transcripts | WAI</a> (en inglés)</p>
+		>Transcripts | <abbr title="Web Accessibility Initiative">WAI</abbr></a> (en inglés)</p>
 		</>
 	)
 }

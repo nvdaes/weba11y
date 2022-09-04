@@ -21,6 +21,16 @@ import FocusVisible from '../complex/focusVisible';
 import SectionHeadings from '../complex/sectionHeadings';
 import InputModalities from '../complex/inputModalities';
 import LabelInName from '../complex/labelInName';
+import Understandable from '../complex/understandable';
+import Readable from '../complex/readable';
+import LanguageOfPage from '../complex/languageOfPage';
+import LanguageOfParts from '../complex/languageOfParts';
+import Predictable from '../complex/predictable';
+import OnInput from '../complex/onInput';
+import InputAssistance from '../complex/inputAssistance';
+import Robust from '../complex/robust';
+import Compatible from '../complex/compatible';
+import StatusMessages from '../complex/statusMessages';
 
 const Main = () => {
 	return (
@@ -49,6 +59,16 @@ const Main = () => {
 		<SectionHeadings />
 		<InputModalities />
 		<LabelInName />
+		<Understandable />
+		<Readable />
+		<LanguageOfPage />
+		<LanguageOfParts />
+		<Predictable />
+		<OnInput />
+		<InputAssistance />
+		<Robust />
+		<Compatible />
+		<StatusMessages />
 		</main>
 		</>
 	);

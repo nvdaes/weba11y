@@ -19,7 +19,7 @@ const SensoryCharacteristics = () => {
 		</thead>
 		<tbody>
 		<tr><td>Pulsa el botón rojo</td><td>Pulsa el botón rojo (Activar alerta)</td></tr>
-		<tr><td>El menú de NVDA se encuentra en la barra inferior</td><td>El menú de NVDA se puede activar desde la bandeja del sistema (<kbd>Windows+b</kbd>), situada en la barra inferior</td></tr>
+		<tr><td>El menú de <abbr title="Non Visual Desktop Access">NVDA</abbr> se encuentra en la barra inferior</td><td>El menú de <abbr title="Non Visual Desktop Access">NVDA</abbr> se puede activar desde la bandeja del sistema, también llamada área de notificaciones (<kbd>Windows+b</kbd>), situada en la barra inferior</td></tr>
 		<tr><td>Dale a la campanita para suscribirte al canal</td><td>Pulsa el botón <em>Suscribirse</em> para recibir actualizaciones del canal</td></tr>
 		</tbody>
 		</table>

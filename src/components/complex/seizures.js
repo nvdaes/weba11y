@@ -7,7 +7,7 @@ const Seizures = () => {
 	<blockquote>
 	<p>No diseñes contenido de modo que se sepa pueda causar convulsiones o reacciones físicas.</p>
 	</blockquote>
-	<p>Aunque no nos detengamos en los criterios de esta pauta, debemos ser conscientes de su importancia y tener en cuenta que también pueden afectar a personas que usan NVDA.</p>
+	<p>Aunque no nos detengamos en los criterios de esta pauta, debemos ser conscientes de su importancia y tener en cuenta que también pueden afectar a personas que usan <abbr title="Non Visual Desktop Access">NVDA</abbr>.</p>
 	</>
 	)
 }

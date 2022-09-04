@@ -37,9 +37,7 @@ const Keyboard = () => {
 		onFocus={handleFocus}
 		/>
 		</form>
-		<ModalDialog isOpen={isOpen} closeModal={closeModal}
-		contentLabel="alerta"
-		content="Estamos probando el teclado" />
+		<ModalDialog isOpen={isOpen} closeModal={closeModal} contentLabel="alerta" content="Estamos probando el teclado" />
 		</>
 	)
 }
