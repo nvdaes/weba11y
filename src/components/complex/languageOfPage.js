@@ -1,6 +1,4 @@
-import { useState } from 'react';
 import ExternalLink from '../single/externalLink';
-import Checkbox from '../single/checkbox';
 
 const LanguageOfPage = () => {
 	return (

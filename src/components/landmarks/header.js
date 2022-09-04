@@ -1,5 +1,3 @@
-import ExternalLink from '../single/externalLink';
-
 const Header = () => {
 	return (
 		<>
