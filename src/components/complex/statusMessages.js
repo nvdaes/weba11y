@@ -42,7 +42,7 @@ const [reportResults, setReportResults] = useState("status");
 			setReportResults("status");
 		}
 	}
-	const handleChange = (e) => {
+	const handleTextboxChange = (e) => {
 		setSearchText(e.target.value);
 	}
 	const handleSubmit = (e) => {
@@ -57,7 +57,7 @@ const [reportResults, setReportResults] = useState("status");
 		</blockquote>
 		<form onSubmit={handleSubmit}>
 		<Checkbox label="Silenciar indicación de resultados" onChange={handleCheckboxChange} />		<label>Introducir texto para buscar (muebles):
-		<input type="search" role="search" id="search" onChange={handleChange} />
+		<input type="search" required role="search" onChange={handleTextboxChange} />
 		</label>
 		<input type="submit" value="Buscar" />
 		</form>
