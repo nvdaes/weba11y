@@ -26,7 +26,7 @@ contents="Orden del foco" /> (nivel A)</h4>
 		rel="noopener noreferrer"><span lang="en">Evaluating Web Accessibility Overview | Web Accessibility Initiative (WAI) | W3C</span> (abre nueva ventana)</a></li>
 		<li><a hrefLang="es" href="https://www.tawdis.net"
 		target="_blank"
-		rel="noopener noreferrer">TAW (abre nueva ventana)</a></li>
+		rel="noopener noreferrer"><abbr title="Test de Accesibilidad Web">TAW</abbr> (abre nueva ventana)</a></li>
 		</ul>
 		</>
 	)

@@ -41,7 +41,7 @@ const OnInput = () => {
 		<option value="(Trabalenguas) Tres tristes tigres comen trigo en un trigal.">Trabalenguas</option>
 		</select>
 		</label>
-		<input type="submit" value="¡Empieza a divertirte!" />
+		<input type="submit" value="Enviar" />
 		</form>
 		</>
 	)

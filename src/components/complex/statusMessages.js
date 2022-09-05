@@ -21,7 +21,7 @@ const List= (props) => {
 
 	return (
 		<>
-		<p role={reportResults} aria-atomic="true">(Resultados de la búsqueda: {filtered.length})</p>
+		<p role={reportResults} aria-atomic="true">(Número de elementos: {filtered.length})</p>
 		<ul>
 		{filtered.map((item) => (
 		<li key={item.id}>{item.name}</li>
@@ -49,17 +49,21 @@ const [reportResults, setReportResults] = useState("status");
 		e.preventDefault();
 		setSubmitText(searchText.toLowerCase());
 	}
+	const handleReset = (e) => {
+		setSubmitText("");
+	}
 	return (
 		<>
 		<h4>Criterio 4.1.3. <ExternalLink href="https://www.w3.org/TR/WCAG21/#status-messages" contents="Mensajes de estado" /> (nivel A)</h4>
 		<blockquote>
 		<p>Para contenido implementado mediante lenguajes de marcado, los mensajes de estado pueden ser interpretados por distintas herramientas tecnológicas por medio del rol o las propiedades, de modo que puedan ser mostrados al usuario por las tecnologías de apoyo sin recibir el foco.</p>
 		</blockquote>
-		<form onSubmit={handleSubmit}>
-		<Checkbox label="Silenciar indicación de resultados" onChange={handleCheckboxChange} />		<label>Introducir texto para buscar (muebles):
+		<form onSubmit={handleSubmit} onReset={handleReset}>
+		<Checkbox label="Silenciar indicación de resultados" onChange={handleCheckboxChange} />		<label>Introducir texto para buscar muebles (requerido):
 		<input type="search" required role="search" onChange={handleTextboxChange} />
 		</label>
 		<input type="submit" value="Buscar" />
+		<input type="reset" value="Mostrar todos los elementos (5)" />
 		</form>
 		<List submitText={submitText} reportResults={reportResults} />
 		</>
