@@ -31,7 +31,7 @@ const Keyboard = () => {
 		<li>Debe ser posible desactivar o reasignar accesos directos que consistan en caracteres sin modificadores, usados, por ejemplo, en webs como Twitter, donde se puede pulsar la letra j para desplazarse al siguiente tuit.</li>
 		</ul>
 		<p>Veamos el efecto de mover el foco fuera de un elemento que puede activarse mediante el teclado al navegar con la tecla <kbd>tab</kbd> (<ExternalLink href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F55.html" contents="(F55)" />.</	p>
-		<form role="form" aria-labelledby="keyboard" onSubmit={handleSubmit}>
+		<form aria-labelledby="keyboard" onSubmit={handleSubmit}>
 		<Checkbox label="Mover foco fuera del botón Abrir diálogo de alerta" onChange={(e) => setRemoveFocus(e.target.checked)} />
 		<input type="submit" value="Abrir diálogo de alerta"
 		onFocus={handleFocus}

@@ -37,7 +37,7 @@ import Footer from './footer';
 const Main = () => {
 	return (
 	<>
-		<main role="nav">
+		<main>
 		<Perceivable />
 		<TextAlternatives />
 		<NonTextContent />

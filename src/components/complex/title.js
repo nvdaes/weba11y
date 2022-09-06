@@ -10,7 +10,7 @@ const Title = () => {
 		<p>Las páginas tienen títulos que describen su tema o propósito.</p>
 		</blockquote>
 		<p>Podemos comprobar el efecto de incluir títulos poco significativos mediante el siguiente formulario: al cambiar el texto del cuadro de edición se modificará el título de esta página web.</p>
-		<form role="form" aria-labelledby="title">
+		<form aria-labelledby="title">
 		<Textbox label="Título de la página:" onChange={handleChange} />
 		</form>
 		</>

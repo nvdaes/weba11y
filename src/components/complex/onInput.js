@@ -33,7 +33,7 @@ const OnInput = () => {
 		<ModalDialog isOpen={isOpen} closeModal={closeModal}
 		contentLabel="Entretenimiento"
 		content={entertainment} />
-		<form role="form" aria-labelledby="onInput"onSubmit={handleSubmit}>
+		<form aria-labelledby="onInput"onSubmit={handleSubmit}>
 		<Checkbox label="Cambiar contexto sin pulsar el botón Enviar" onChange={handleChange} />
 		<label>Elige un tipo de entretenimiento:
 		<select value={entertainment} onChange={handleSelect}>

@@ -13,7 +13,7 @@ const handleChange = (e) => {
 		<h4 id="sequence">Criterio 1.3.2. <ExternalLink href="https://www.w3.org/TR/WCAG21/#meaningful-sequence" contents="Orden significativo" /> (nivel A)</h4>
 		<p>Cuando el orden en que se presenta un contenido afecte a su significado, una secuencia correcta debe poder ser interpretada por distintas herramientas tecnológicas.</p>
 		<p>A continuación comprobaremos el efecto de incluir espacios en un fragmento de texto, técnica que a veces se utiliza para dar formato, y la diferencia al presentar la secuencia correcta.</p>
-		<form role="form" aria-labelledby="sequence">
+		<form aria-labelledby="sequence">
 		<Checkbox label="Secuencia con espacios intercalados" onChange={handleChange} />
 		</form>
 		<h5>{meaningfulSeq}</h5>

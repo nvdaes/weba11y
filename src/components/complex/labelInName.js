@@ -15,7 +15,7 @@ const LabelInName = () => {
 		<p>Para componentes de interfaz de usuario con etiquetas que incluyan texto o imágenes de texto, el nombre incluye el texto que se presenta visualmente.</p>
 		</blockquote>
 		<p>Esto puede ser importante para personas que naveguen por la web mediante comandos de reconocimiento del habla. También puede mejorar la experiencia si se usan sintetizadores de voz, que en este caso leerán un nombre que contenga el texto presentado visualmente para identificar el componente.</p>
-		<form role="form" aria-labelledby="labelInName">
+		<form aria-labelledby="labelInName">
 		<Textbox label="Cambiar nombre accesible:" ariaLabel={ariaLabel} onChange={handleChange} />
 		</form>
 		</>

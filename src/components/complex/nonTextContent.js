@@ -11,7 +11,7 @@ const NonTextContent = () => {
 			<h4 id="nonTextContent">Criterio 1.1.1. <ExternalLink href="https://www.w3.org/TR/WCAG21/#non-text-content" contents="Contenido no textual" /> (nivel A)</h4>
 		<p>En muchos casos, es necesario proporcionar una alternativa de texto para contenido no textual.</p>
 		<p>En el siguiente formulario podemos establecer (o borrar completamente) la alternativa textual para un gráfico. De este modo comprobaremos cómo afecta a la lectura con <abbr title="Non Visual Desktop Access">NVDA</abbr>.</p>
-		<form role="form" aria-labelledby="nonTextContent">
+		<form aria-labelledby="nonTextContent">
 		<Textbox label="Introduce la alternativa de texto para la imagen:" value={alternative} onChange={handleChange} />
 		</form>
 		<p>A continuación se muestra la imagen con la alternativa textual establecida.</p>
