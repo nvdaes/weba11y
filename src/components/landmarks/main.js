@@ -5,6 +5,7 @@ import TimeBasedMedia from '../complex/timeBasedMedia';
 import Adaptable from '../complex/adaptable';
 import Relationships from '../complex/relationships';
 import Sequence from '../complex/sequence';
+import IdentifyPurpose from '../complex/identifyPurpose';
 import SensoryCharacteristics from '../complex/sensoryCharacteristics';
 import Distinguishable from '../complex/distinguishable';
 import Operable from '../complex/operable';
@@ -44,6 +45,7 @@ const Main = () => {
 		<Adaptable />
 		<Relationships />
 		<Sequence />
+		<IdentifyPurpose />
 		<SensoryCharacteristics />
 		<Distinguishable />
 		<Operable />

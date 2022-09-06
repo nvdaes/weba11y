@@ -29,7 +29,7 @@ const AutomaticUpdates = () => {
 
 	return(
 		<>
-		<form>
+		<form role="form" aria-labelledby="time">
 		<Checkbox label="Activar cronómetro" onChange={handleChange} />
 		<label>Frecuencia de actualización (segundos, entre 1, valor por defecto, y 9)
 		<input name="frequency" id="frequency" type="number" min="1" max="9" step	="1"

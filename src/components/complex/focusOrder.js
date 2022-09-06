@@ -6,14 +6,14 @@ const FocusOrder = () => {
 	}
 	return (
 		<>
-		<h4>Criterio 2.4.3. <ExternalLink href="https://www.w3.org/TR/WCAG21/#focus-order"
+		<h4 id="focusOrder">Criterio 2.4.3. <ExternalLink href="https://www.w3.org/TR/WCAG21/#focus-order"
 contents="Orden del foco" /> (nivel A)</h4>
 		<blockquote>
 		<p>Si es posible navegar secuencialmente por una página web y el orden de navegación afecta a su significado u operabilidad, los componentes que pueden recibir el foco lo reciben en un orden que preserve el significado y la operabilidad.</p>
 		</blockquote>
 		<p>Marca la siguiente casilla de verificación para comprobar el efecto de indicar un orden de navegación que no coincide con el orden de lectura. Intenta navegar con <kbd>tab</kbd>.</p>
-		<p>Usaremos una técnica basada en <ExternalLink href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F44.html" hrefLang="en" contents="F44" /></p>
-		<form>
+		<p>Usaremos una técnica basada en <ExternalLink href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F44.html" hrefLang="en" contents="F44" />.</p>
+		<form role="form" aria-labelledby="focusOrder">
 		<label>Orden de lectura incorrecto (el enlace <span lang="en">Evaluating Web Accessibility Overview</span> será difícil de encontrar)
 		<input type="checkbox" 		onChange={handleChange}
 		/>
@@ -26,7 +26,7 @@ contents="Orden del foco" /> (nivel A)</h4>
 		rel="noopener noreferrer"><span lang="en">Evaluating Web Accessibility Overview | Web Accessibility Initiative (WAI) | W3C</span> (abre nueva ventana)</a></li>
 		<li><a hrefLang="es" href="https://www.tawdis.net"
 		target="_blank"
-		rel="noopener noreferrer"><abbr title="Test de Accesibilidad Web">TAW</abbr> (abre nueva ventana)</a></li>
+		rel="noopener noreferrer"><abbr title="Test de Accesibilidad Web">TAW</abbr> (abre nueva ventana)</a>.</li>
 		</ul>
 		</>
 	)

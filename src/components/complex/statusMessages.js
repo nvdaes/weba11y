@@ -54,11 +54,11 @@ const [reportResults, setReportResults] = useState("status");
 	}
 	return (
 		<>
-		<h4>Criterio 4.1.3. <ExternalLink href="https://www.w3.org/TR/WCAG21/#status-messages" contents="Mensajes de estado" /> (nivel A)</h4>
+		<h4 id="statusMessages">Criterio 4.1.3. <ExternalLink href="https://www.w3.org/TR/WCAG21/#status-messages" contents="Mensajes de estado" /> (nivel A)</h4>
 		<blockquote>
 		<p>Para contenido implementado mediante lenguajes de marcado, los mensajes de estado pueden ser interpretados por distintas herramientas tecnológicas por medio del rol o las propiedades, de modo que puedan ser mostrados al usuario por las tecnologías de apoyo sin recibir el foco.</p>
 		</blockquote>
-		<form onSubmit={handleSubmit} onReset={handleReset}>
+		<form role="form" aria-labelledby="statusMessages" onSubmit={handleSubmit} onReset={handleReset}>
 		<Checkbox label="Silenciar indicación de resultados" onChange={handleCheckboxChange} />		<label>Introducir texto para buscar muebles (requerido):
 		<input type="search" required role="search" onChange={handleTextboxChange} />
 		</label>
@@ -66,6 +66,10 @@ const [reportResults, setReportResults] = useState("status");
 		<input type="reset" value="Mostrar todos los elementos (5)" />
 		</form>
 		<List submitText={submitText} reportResults={reportResults} />
+		<aside aria-labelledby="asideSettings">
+		<h5 id="asideSettings">Nota sobre opciones de <abbr title="Non Visual Desktop Access">NVDA</abbr></h5>
+		<p><kbd>NVDA+5</kbd> activa o desactiva las indicaciones sobre contenido dinámico. Es importante considerar cómo afectan las opciones de configuración a la evaluación de accesibilidad.</p>
+		</aside>
 		</>
 	)
 }

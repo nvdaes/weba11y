@@ -7,10 +7,10 @@ const SensoryCharacteristics = () => {
 	const handleChange = (e) => setShowHeaders(e.target.checked);
 	return (
 	<>
-		<h4>Criterio 1.3.3. <ExternalLink href="https://www.w3.org/TR/WCAG21/#sensory-characteristics" contents="Características sensoriales" /> (nivel A)</h4>
+		<h4 id="sensoryCharacteristics">Criterio 1.3.3. <ExternalLink href="https://www.w3.org/TR/WCAG21/#sensory-characteristics" contents="Características sensoriales" /> (nivel A)</h4>
 		<p>Las instrucciones ofrecidas para entender y manejar el contenido no se basan solo en características sensoriales de los componentes, tales como forma, color, tamaño, ubicación visual, orientación o sonido.</p>
 		<p>En la siguiente tabla se muestran ejemplos de instrucciones.</p>
-		<form>
+		<form role="form" aria-labelledby="sensoryCharacteristics">
 		<Checkbox label="Mostrar encabezados de columna para indicar si los ejemplos son correctos" onChange={handleChange} />
 		</form>
 		<table><caption>Ejemplos de instrucciones basadas en características sensoriales</caption>

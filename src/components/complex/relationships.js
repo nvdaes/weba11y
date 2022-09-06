@@ -10,11 +10,11 @@ const handleChange = (e) => {
 }
 	return (
 	<>
-		<h4>Criterio 1.3.1. <ExternalLink href="https://www.w3.org/TR/WCAG21/#info-and-relationships" contents="Información y relaciones" /> (nivel A)</h4>
+		<h4 id="relationships">Criterio 1.3.1. <ExternalLink href="https://www.w3.org/TR/WCAG21/#info-and-relationships" contents="Información y relaciones" /> (nivel A)</h4>
 		<p>La información, estructura y relaciones transmitidas de forma perceptible deben definirse de modo que puedan ser interpretadas por distintas herramientas tecnológicas o estar disponibles en texto. En lenguajes como <abbr title="Hypertext Markup Language">HTML</abbr> podemos lograrlo usando las etiquetas correspondientes.</p>
 		<p><abbr title="Non Visual Desktop Access">NVDA</abbr> puede indicar el tipo de elemento sobre el que se encuentra el cursor (por ejemplo, encabezados, listas, celdas de tablas, etc).</p>
 		<p>A continuación comprobaremos el efecto de eliminar la información semántica de <abbr title="Hypertext Markup Language">HTML</abbr> en una tabla.</p>
-		<form>
+		<form role="form" aria-labelledby="relationships">
 		<Checkbox label="Eliminar información semántica en tabla" onChange={handleChange} />
 		</form>
 		<table role={role}>
