@@ -5,8 +5,8 @@ import TimeBasedMedia from '../complex/timeBasedMedia';
 import Adaptable from '../complex/adaptable';
 import Relationships from '../complex/relationships';
 import Sequence from '../complex/sequence';
-import IdentifyPurpose from '../complex/identifyPurpose';
 import SensoryCharacteristics from '../complex/sensoryCharacteristics';
+import IdentifyPurpose from '../complex/identifyPurpose';
 import Distinguishable from '../complex/distinguishable';
 import Operable from '../complex/operable';
 import Keyboard from '../complex/keyboard';
@@ -37,7 +37,7 @@ import Footer from './footer';
 const Main = () => {
 	return (
 	<>
-		<main>
+		<main role="nav">
 		<Perceivable />
 		<TextAlternatives />
 		<NonTextContent />
@@ -45,8 +45,8 @@ const Main = () => {
 		<Adaptable />
 		<Relationships />
 		<Sequence />
-		<IdentifyPurpose />
 		<SensoryCharacteristics />
+		<IdentifyPurpose />
 		<Distinguishable />
 		<Operable />
 		<Keyboard />

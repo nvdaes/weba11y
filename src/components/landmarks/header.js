@@ -3,7 +3,7 @@ import ExternalLink from '../single/externalLink';
 const Header = () => {
 	return (
 		<>
-		<header>
+		<header role="banner">
 		<h1>Evaluación de accesibilidad conforme a <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1</h1>
 		<p>Esta web proporciona información y elementos interactivos para comprobar el efecto de cumplir con ciertos criterios de las <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1.</p>
 		<p>Se trata de un proyecto personal que no está apoyado por ninguna entidad y puede contener información errónea o imprecisa. Si crees que puede mejorarse, usa alguno de los medios de contacto proporcionados al final de esta página para dejar tus comentarios.</p>
