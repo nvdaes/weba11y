@@ -1,25 +1,30 @@
-import { useState } from 'react';
+// https://blog.logrocket.com/using-localstorage-react-hooks/
+
+import { useState, useEffect } from 'react';
 
 const Note = (props) => {
 	const { id, label } = props;
-	const [noteBody, setNoteBody] = useState(localStorage.id);
+	const [note, setNote] = useState(() => {
+		const saved = localStorage.getItem({id});
+		const initialValue = JSON.parse(saved);
+  return initialValue || "";
+});
 	const handleChange = (e) => {
-		setNoteBody(e.target.value);
+		setNote(e.target.value);
 	}
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		localStorage.id = noteBody;
-	}
+	useEffect(() => {
+		localStorage.setItem({id}, JSON.stringify(note));
+	}, [id, note]);
 	return (
 		<>
 		<details>
 		<summary>
 		<h4>Nota para {label}</h4>
 		</summary>
-		<form aria-labelledby={label} onSubmit={handleSubmit}>
+		<form aria-labelledby={label}>
 		<label>Nota para {label}:
 		<textarea rows="4" cols="50" onChange={handleChange}>
-		{noteBody}
+			{note}
 		</textarea>
 		</label>
 		<input type="submit" value="Guardar nota" />
