@@ -26,7 +26,7 @@ const OnInput = () => {
 
 	return (
 		<>
-		<h4 id="onInput">Criterio 3.3.2. <ExternalLink href="https://www.w3.org/TR/WCAG21/#on-input" contents="Sobre campos de entrada" /> (nivel A)</h4>
+		<h4 id="onInput">Criterio 3.2.2. <ExternalLink href="https://www.w3.org/TR/WCAG21/#on-input" contents="Sobre campos de entrada" /> (nivel A)</h4>
 		<blockquote>
 		<p>Cambiar las opciones de cualquier componente de interfaz de usuario no produce un cambio automático de contexto, a menos que el usuario haya sido avisado del comportamiento antes de utilizar el componente.</p>
 		</blockquote>
