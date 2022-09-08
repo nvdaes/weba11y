@@ -1,9 +1,11 @@
 import ExternalLink from '../single/externalLink';
+import Note from '../single/note';
 
 const TimeBasedMedia = () => {
 	return (
 		<>
 		<h3>Pauta 1.2. <ExternalLink href="https://www.w3.org/TR/WCAG21/#time-based-media" contents="Contenido multimedia dependiente del tiempo" /></h3>
+		<Note id="timeBasedMedia" label="Contenido multimedia dependiente del tiempo:" />
 		<blockquote>
 		<p>Proporciona alternativas para contenido multimedia dependiente del tiempo.</p>
 		</blockquote>

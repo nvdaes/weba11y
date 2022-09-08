@@ -1,9 +1,11 @@
 import ExternalLink from '../single/externalLink';
+import Note from '../single/note';
 
 const EnoughTime = () => {
 	return (
 		<>
 		<h3 id="time">Pauta 2.2. <ExternalLink href="https://www.w3.org/TR/WCAG21/#enough-time" contents="Tiempo suficiente" /></h3>
+		<Note id="enoughTime" label="Tiempo suficiente:" />
 		<blockquote>
 		<p>Da a los usuarios el tiempo suficiente para que lean y utilicen el contenido.</p>
 		</blockquote>

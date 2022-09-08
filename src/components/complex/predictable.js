@@ -1,9 +1,11 @@
 import ExternalLink from "../single/externalLink";
+import Note from '../single/note';
 
 const Predictable = () => {
 	return (
 		<>
 		<h3>Pauta 3.2. <ExternalLink href="https://www.w3.org/TR/WCAG21/#predictable" contents="Predecible" /></h3>
+		<Note id="predictable" label="Predecible:" />
 		<blockquote>
 		<p>Haz que las páginas web aparezcan y se manejen de forma predecible.</p>
 		</blockquote>

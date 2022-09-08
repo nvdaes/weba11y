@@ -2,6 +2,7 @@ import { useState } from 'react';
 import ModalDialog from '../single/modalDialog';
 import ExternalLink from '../single/externalLink';
 import Checkbox from '../single/checkbox';
+import Note from '../single/note';
 
 const Keyboard = () => {
 	const [removeFocus, setRemoveFocus] = useState(false);
@@ -21,6 +22,7 @@ const Keyboard = () => {
 	return (
 		<>
 		<h3 id="keyboard">Pauta 2.1.<ExternalLink href="https://www.w3.org/TR/WCAG21/#keyboard-accessible" contents="Accesible mediante el teclado" /></h3>
+		<Note id="keyboard" label="Accesible mediante el teclado:" />
 		<blockquote>
 		<p>Haz que toda la funcionalidad sea accesible mediante el teclado.</p>
 		</blockquote>
