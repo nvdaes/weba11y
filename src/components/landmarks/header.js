@@ -1,4 +1,5 @@
 import ExternalLink from '../single/externalLink';
+import Note from '../single/note';
 
 const Header = () => {
 	return (
@@ -10,6 +11,8 @@ const Header = () => {
 		<p>Las <a href="https://www.w3.org/TR/WCAG21"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1 (abre nueva ventana)</a> son una recomendación del <abbr title="World Wide Web Consortium">W3C</abbr> y pueden ser utilizadas como material de referencia o citadas en otros documentos.</p>
 		<p>Además de estas pautas, se han consultado otras publicaciones del <abbr title="World Wide Web Consortium">W3C</abbr>, como queda reflejado en los enlaces de esta web, y la <ExternalLink href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf" contents="EN 301 549 V3.2.1 en inglés" />.</p>
 		<p>Para empezar, consulta información y descarga <abbr title="Non Visual Desktop Access">NVDA</abbr> desde la <ExternalLink href="https://www.nvaccess.org" contents="web de NV Access" />.</p>
+		<p>Puedes usar los controles etiquetados con la palabra <q>nota</q> para añadir comentarios a distintas secciones. Por ejemplo, puede resultar útil comentar comandos, procedimientos para evaluar las distintas pautas, etc. Las notas se podrán editar y se almacenarán automáticamente en el navegador, de modo que seguirán disponibles para la siguiente sesión.</p>
+		<Note id="general" label="empezar" />
 		</header>
 		</>
 	);
