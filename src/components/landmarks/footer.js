@@ -3,7 +3,7 @@ import ExternalLink from '../single/externalLink';
 const Footer = () => {
 	return (
 		<>
-		<footer role="contentinfo">
+		<footer>
 		<h2 id="footer">Medios de contacto</h2>
 		<ul>
 		<li>formulario anónimo de Google</li>

@@ -4,7 +4,7 @@ import Note from '../single/note';
 const Compatible = () => {
 	return (
 		<>
-		<h3>Pauta 4.1. <ExternalLink href="https://www.w3.org/TR/WCAG21/#compatible" contents="Compatible" /></h3>
+		<h3 id="compatible">Pauta 4.1. <ExternalLink href="https://www.w3.org/TR/WCAG21/#compatible" contents="Compatible" /></h3>
 		<Note id="compatible" label="Compatible:" />
 		<blockquote>
 		<p>Maximiza la compatibilidad con agentes de usuario actuales y futuros, incluidas las tecnologías de apoyo.</p>

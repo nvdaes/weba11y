@@ -4,7 +4,7 @@ import Note from '../single/note';
 const InputAssistance = () => {
 	return (
 		<>
-		<h3>Pauta 3.3. <ExternalLink href="https://www.w3.org/TR/WCAG21/#input-assistance" contents="Asistencia para la entrada de datos" /></h3>
+		<h3 id="inputAssistance">Pauta 3.3. <ExternalLink href="https://www.w3.org/TR/WCAG21/#input-assistance" contents="Asistencia para la entrada de datos" /></h3>
 		<Note id="inputAssistance" label="Asistencia para la entrada de datos:" />
 		<blockquote>
 		<p>Ayuda a los usuarios a evitar y corregir errores.</p>

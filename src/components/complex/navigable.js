@@ -4,7 +4,7 @@ import Note from '../single/note';
 const Navigable = () => {
 	return (
 		<>
-		<h3>Pauta 2.4. <ExternalLink href="https://www.w3.org/TR/WCAG21/#navigable" contents="Navegable" /></h3>
+		<h3 id="navigable">Pauta 2.4. <ExternalLink href="https://www.w3.org/TR/WCAG21/#navigable" contents="Navegable" /></h3>
 		<Note id="navigable" label="Navegable:" />
 		<blockquote>
 		<p>Ofrece formas de ayudar a los usuarios a navegar, encontrar contenido y determinar dónde están.</p>

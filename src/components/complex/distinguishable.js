@@ -4,7 +4,7 @@ import Note from '../single/note';
 const Distinguishable = () => {
 	return (
 			<>
-		<h3>Pauta 1.4. <ExternalLink href="https://www.w3.org/TR/WCAG21/#distinguishable" contents="Distinguible" /></h3>
+		<h3 id="distinguishable">Pauta 1.4. <ExternalLink href="https://www.w3.org/TR/WCAG21/#distinguishable" contents="Distinguible" /></h3>
 		<Note id="distinguishable" label="Distinguible:" />
 		<blockquote>
 		<p>Facilita que los usuarios puedan ver y oír el contenido, incluida la separación entre primer plano y fondo.</p>

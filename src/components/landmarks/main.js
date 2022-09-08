@@ -32,8 +32,6 @@ import InputAssistance from '../complex/inputAssistance';
 import Robust from '../complex/robust';
 import Compatible from '../complex/compatible';
 import StatusMessages from '../complex/statusMessages';
-import Aside from './aside';
-import Footer from './footer';
 
 const Main = () => {
 	return (
@@ -73,8 +71,6 @@ const Main = () => {
 		<Robust />
 		<Compatible />
 		<StatusMessages />
-		<Aside />
-		<Footer />
 		</main>
 		</>
 	);

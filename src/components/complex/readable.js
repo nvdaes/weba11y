@@ -4,7 +4,7 @@ import Note from '../single/note';
 const Readable = () => {
 	return (
 		<>
-		<h3>Pauta 3.1. <ExternalLink href="https://www.w3.org/TR/WCAG21/#readable" contents="Legible" /></h3>
+		<h3 id="readable">Pauta 3.1. <ExternalLink href="https://www.w3.org/TR/WCAG21/#readable" contents="Legible" /></h3>
 		<Note id="readable" label="Legible:" />
 		<blockquote>
 		<p>Haz que el texto sea legible y comprensible.</p>

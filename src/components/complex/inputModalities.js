@@ -4,7 +4,7 @@ import Note from '../single/note';
 const InputModalities = () => {
 	return (
 		<>
-		<h3>Pauta 2.5. <ExternalLink href="https://www.w3.org/TR/WCAG21/#input-modalities" contents="Modalidades de entrada" /></h3>
+		<h3 id="inputModalities">Pauta 2.5. <ExternalLink href="https://www.w3.org/TR/WCAG21/#input-modalities" contents="Modalidades de entrada" /></h3>
 		<Note id="inputModalities" label="Modalidades de entrada:" />
 		<blockquote>
 		<p>Facilita a los usuarios el manejo de la funcionalidad mediante diferentes entradas más allá del teclado.</p>

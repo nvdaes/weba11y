@@ -25,8 +25,7 @@ const Note = (props) => {
 		</summary>
 		<form aria-labelledby={label}>
 		<label>Nota para {label}:
-		<textarea rows="4" cols="50" onChange={handleChange}>
-			{note}
+		<textarea value={note} rows="4" cols="50" onChange={handleChange}>
 		</textarea>
 		</label>
 		</form>
