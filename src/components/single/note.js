@@ -18,6 +18,7 @@ const Note = (props) => {
 	}, [id, note]);
 	return (
 		<>
+		<aside aria-labelledby="{label}">
 		<details>
 		<summary>
 		<p>Nota para {label} ({hasComment}</p>
@@ -30,6 +31,7 @@ const Note = (props) => {
 		</label>
 		</form>
 		</details>
+		</aside>
 		</>
 	)
 }
