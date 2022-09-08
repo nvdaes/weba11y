@@ -8,8 +8,9 @@ const Note = (props) => {
 		const saved = localStorage.getItem({id});
 		const initialValue = JSON.parse(saved);
   return initialValue || "";
-});
-	const handleChange = (e) => {
+	});
+	let hasComment = note === "" ? "sin comentario": "con comentario";
+		const handleChange = (e) => {
 		setNote(e.target.value);
 	}
 	useEffect(() => {
@@ -19,7 +20,7 @@ const Note = (props) => {
 		<>
 		<details>
 		<summary>
-		<h4>Nota para {label}</h4>
+		<h4>Nota para {label} ({hasComment}</h4>
 		</summary>
 		<form aria-labelledby={label}>
 		<label>Nota para {label}:
