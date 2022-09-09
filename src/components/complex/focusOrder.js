@@ -14,7 +14,7 @@ contents="Orden del foco" /> (nivel A)</h4>
 		<p>Marca la siguiente casilla de verificación para comprobar el efecto de indicar un orden de navegación que no coincide con el orden de lectura. Intenta navegar con <kbd>tab</kbd>.</p>
 		<p>Usaremos una técnica basada en <ExternalLink href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F44.html" hrefLang="en" contents="F44" />.</p>
 		<form aria-labelledby="focusOrder">
-		<label>Orden de lectura incorrecto (el enlace <span lang="en">Evaluating Web Accessibility Overview</span> será difícil de encontrar)
+		<label>Orden de foco incorrecto (el enlace <span lang="en">Evaluating Web Accessibility Overview</span> será difícil de encontrar)
 		<input type="checkbox" 		onChange={handleChange}
 		/>
 		</label>
