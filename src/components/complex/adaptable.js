@@ -15,7 +15,7 @@ const Adaptable = () => {
 		<li>Debe ser posible determinar la secuencia correcta de lectura.</li>
 		<li>Las instrucciones no deben depender únicamente de características sensoriales como forma de los elementos, color, etc.</li>
 		<li>No se debe restringir la orientación (por ejemplo, a modo retrato o apaisado) a menos que esta restricción sea esencial.</li>
-		<li>Existen requisitos sobre la identificación del propósito de campos para la entrada de datos y de las regiones de la página web.</li>
+		<li>Existen requisitos sobre la identificación del propósito de campos para la entrada de datos y de las regiones de la página web. En cuanto a la entrada de datos, podemos comprobar el funcionamiento del atributo <code>autocomplete</code> en el formulario de contacto de la web de la comunidad hispanohablante de <abbr title="Non Visual Desktop Access">NVDA</abbr>. Aquí mencionaremos el criterio relativo al propósito de las regiones.</li>
 		</ul>
 		<p>Veamos los tres primeros criterios.</p>
 		</>
