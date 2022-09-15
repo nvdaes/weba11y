@@ -17,7 +17,7 @@ const DownloadLink = () =>{
 	}
 	return (
 	<>
-<a download="nvda.txt" href={`data:text/plain, charset=utf-8;, ${encodeURIComponent(JSON.stringify(localStorage))}`}>Descargar notas</a>
+<a download="nvda.json" href={`data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(localStorage))}`}>Descargar notas</a>
 <form onSubmit={handleSubmit}>
 <label>Archivo de notas:
 <input type="file" accept="*.json" required />
