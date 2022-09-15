@@ -1,5 +1,6 @@
 import ExternalLink from '../single/externalLink';
 import Note from '../single/note';
+import ExportNotes from '../complex/exportNotes';
 
 const Header = () => {
 	return (
@@ -13,6 +14,7 @@ const Header = () => {
 		<p>Para empezar, consulta información y descarga <abbr title="Non Visual Desktop Access">NVDA</abbr> desde la <ExternalLink href="https://www.nvaccess.org" contents="web de NV Access" />.</p>
 		<p>Puedes usar los controles etiquetados con la palabra &quot;nota&quot; para añadir comentarios a distintas secciones. Por ejemplo, puede resultar útil comentar comandos, procedimientos para evaluar las distintas pautas, etc. Las notas se podrán editar y se almacenarán automáticamente en el navegador, de modo que seguirán disponibles para la siguiente sesión. En el exterior de cada nota se indicará si tiene o no un comentario añadido.</p>
 		<Note id="general" label="empezar" />
+		<ExportNotes />
 		</header>
 		</>
 	);
