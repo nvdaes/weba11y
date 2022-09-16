@@ -13,6 +13,7 @@ const Footer = () => {
 		</ul>
 		</section>
 		<p><ExternalLink href="https://github.com/nvdaes/weba11y/" contents="Código fuente en GitHub" /></p>
+<p>Última actualización: <time datetime="2022-09-16">16 de septiembre de 2022</time></p>
 		</footer>
 		</>
 	);
