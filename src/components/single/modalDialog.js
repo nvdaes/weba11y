@@ -22,11 +22,12 @@ const ModalDialog = (props) => {
 			style={customStyles}
 			contentLabel={contentLabel}
 		>
-		<p>
+		<section>
 		{content}
-		</p>
+		</section>
 		<button onClick={closeModal}>Cerrar</button>
 		</Modal>
 	)
 }
+
 export default ModalDialog;

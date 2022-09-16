@@ -3,26 +3,41 @@ import { useState } from 'react';
 import ModalDialog from '../single/modalDialog';
 
 const DownloadLink = () =>{
-	const [file, setFile] = useState("");
+	const [loaded, setLoaded] = useState("");
 	const [fileData, setFileData] = useState("");
 	const handleChange = (e) => {
-		setFile(e.target.files[0])
+		const fileReader = new FileReader();
+		fileReader.onload = async () => {
+		await setFileData(fileReader.result);
+		await setLoaded("Cargado");
+	}
+		fileReader.readAsText(e.target.files[0]);
+	}
+
+	const handleClick= (e) => {
+		localStorage.clear();
 	}
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		fetch(file)
-		.then((response) => alert(response))
-		.catch((err) => alert(err))
+		const json = JSON.parse(fileData);
+		Object.entries(json).forEach(([key, value]) => {
+			localStorage.setItem(key, value);
+		});
 	}
+
 	return (
 	<>
-<a download="nvda.txt" href={`data:text/plain, charset=utf-8;, ${encodeURIComponent(JSON.stringify(localStorage))}`}>Descargar notas</a>
+<a download="nvda.json" href={`data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify(localStorage))}`}>Descargar notas</a>
 <form onSubmit={handleSubmit}>
 <label>Archivo de notas:
-<input type="file" accept="*.json" required />
+<input type="file" accept=".json" required onChange={handleChange} />
 </label>
+<output>{loaded}</output>
 <input type="submit" value="Importar notas" />
+<label>Borrar notas
+<input type="button" onClick={handleClick} />
+</label>
 </form>
 </>
 
