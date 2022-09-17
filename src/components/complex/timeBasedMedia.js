@@ -12,7 +12,7 @@ const TimeBasedMedia = () => {
 		<p>Proporciona alternativas para contenido multimedia dependiente del tiempo.</p>
 		</blockquote>
 		<p>El contenido multimedia puede ser pregrabado o en tiempo real, y existen criterios de accesibilidad para ambas modalidades.</p>
-		<p>Para hacer accesible el contenido multimedia puede utilizarse, en función de si se trata de audio, vídeo o ambos:</p>:
+		<p>Para hacer accesible el contenido multimedia puede utilizarse, en función de si se trata de audio, vídeo o ambos:</p>
 		<ul>
 		<li>transcripciones estructuradas correctamente (por ejemplo, en <abbr title="Hypertext Markup Language">HTML</abbr>), que podrán ser leídas y revisadas mediante voz y braille;</li>
 		<li>subtítulos;</li>
