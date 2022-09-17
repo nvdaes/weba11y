@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkweb_a11y=self.webpackChunkweb_a11y||[]).push([[612],{612:function(e,a,o){o.r(a);var i=o(184);a.default=function(){return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)("p",{id:"audio",children:"Audio sobre la lista de elementos y la navegaci\xf3n con una sola letra (Sergio G\xf3mez)"}),(0,i.jsx)("p",{children:(0,i.jsx)("audio",{"aria-labelledby":"audio",controls:!0,src:"https://drive.google.com/uc?export=download&id=103Ckiv16LBIFU0eH9kP2ZQ-uF5Yo9mEQ",children:"Tu navegador no admite audio"})})]})}}}]);
+//# sourceMappingURL=612.ac173c06.chunk.js.map
