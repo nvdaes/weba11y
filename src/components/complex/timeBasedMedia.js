@@ -1,6 +1,8 @@
+import React, { Suspense } from 'react';
+
 import ExternalLink from '../single/externalLink';
 import Note from '../single/note';
-
+const AudioSergioGomez = React.lazy(() => import('./audioSergioGomez'));
 const TimeBasedMedia = () => {
 	return (
 		<>
@@ -18,10 +20,9 @@ const TimeBasedMedia = () => {
 		<li>audiodescripción (simultánea o ampliada).</li>
 		</ul>
 		<p>Como ejemplo, compartimos un audio de Sergio Gómez en el que nos habla sobre la lista de elementos y la navegación con una sola letra. También incluimos la transcripción del audio, como indica el <ExternalLink href="https://www.w3.org/TR/WCAG21/#audio-only-and-video-only-prerecorded" contents="criterio 1.2.1" />.</p>
-		<p id="audio">Audio sobre la lista de elementos y la navegación con una sola letra (Sergio Gómez)</p>
-		<p>
-		<audio aria-labelledby="audio" controls src="https://drive.google.com/uc?export=download&id=103Ckiv16LBIFU0eH9kP2ZQ-uF5Yo9mEQ">Tu navegador no admite audio</audio>
-		</p>
+		<Suspense fallback={<div>Cargando audio...</div>}>
+		<AudioSergioGomez />
+		</Suspense>
 		<details><summary>Transcripción del audio sobre la lista de elementos y navegación con una sola letra</summary>
 		<p>
 		Sergio Gómez: Hola:
