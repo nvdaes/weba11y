@@ -11,7 +11,7 @@ const customStyles = {
 	},
 };
 
-// Modal.setAppElement('#ariaHidden');
+Modal.setAppElement(document.getElementById('root'));
 const ModalDialog = (props) => {
 	const {isOpen, contentLabel, content, closeModal} = props;
 	return (
