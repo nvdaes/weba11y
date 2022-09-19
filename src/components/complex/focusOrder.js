@@ -24,9 +24,7 @@ contents="Orden del foco" /> (nivel A)</h4>
 		<li><a id="index1" hrefLang="en" href="https://www.w3.org/WAI/test-evaluate/"
 		target="_blank"
 		rel="noopener noreferrer"><span lang="en">Evaluating Web Accessibility Overview | Web Accessibility Initiative (WAI) | W3C</span> (abre nueva ventana)</a></li>
-		<li><a hrefLang="es" href="https://www.tawdis.net"
-		target="_blank"
-		rel="noopener noreferrer"><abbr title="Test de Accesibilidad Web">TAW</abbr> (abre nueva ventana)</a>.</li>
+		<li><ExternalLink href="https://wave.webaim.org/" contents="Wave - WebAIM" /></li>
 		</ul>
 		</>
 	)
