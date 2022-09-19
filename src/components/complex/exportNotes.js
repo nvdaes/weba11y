@@ -30,7 +30,7 @@ const Dialog = () =>{
 
 	return (
 		<>
-		<a download="nvda.json" href={`data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify(localStorage))}`}>Descargar notas</a>
+		<p><a download="nvda.json" href={`data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify(localStorage))}`}>Descargar notas</a></p>
 		<form onSubmit={handleSubmit}>
 		<label>Archivo de notas para importar:
 		<input type="file" accept=".json" required onChange={handleChange} />
