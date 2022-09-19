@@ -18,7 +18,7 @@ const Navigation = () => {
 		<ul>
 		<li><InternalLink href="#keyboard" contents="Accesible mediante el teclado" /></li>
 		<li><InternalLink href="#time" contents="Tiempo suficiente" /></li>
-		<li><InternalLink href="#seizures" contents="Reacciones físicas" /></li>
+		<li><InternalLink href="#seizures" contents="Convulsiones y reacciones físicas" /></li>
 		<li><InternalLink href="#navigable" contents="Navegable" /></li>
 		<li><InternalLink href="#inputModalities" contents="Modalidades de entrada" /></li>
 		</ul>
