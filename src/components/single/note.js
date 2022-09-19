@@ -23,7 +23,7 @@ const Note = (props) => {
 		<summary>
 		<p id={id}>Nota para {label} ({hasComment}</p>
 		</summary>
-		<form aria-labelledby={label}>
+		<form aria-labelledby={id}>
 		<label>Nota para {label}:
 		<textarea value={note} rows="4" cols="50" onChange={handleChange}>
 		</textarea>
