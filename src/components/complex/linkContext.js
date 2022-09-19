@@ -3,7 +3,7 @@ import ExternalLink from '../single/externalLink';
 const LinkContext = () => {
 	return (
 		<>
-		<h4>Criterio 2.4.4. <ExternalLink href="https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context"
+		<h4>Criterio 2.4.4. <ExternalLink href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context"
 contents="Propósito de enlaces (en contexto)" /> (nivel A)</h4>
 		<blockquote>
 		<p>El propósito de cada enlace puede ser determinado mediante el texto del enlace por sí mismo o mediante el texto del enlace y su contexto programado, excepto cuando el propósito del enlace sea ambiguo para los usuarios en general.</p>
