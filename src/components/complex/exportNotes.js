@@ -59,7 +59,7 @@ const ExportNotes = () => {
 	return (
 		<>
 		<button onClick={handleClick}>descargar e importar notas</button>
-		<ModalDialog isOpen={isOpen} closeModal={closeModal} contentLabel='Administrar notas' content={<Dialog />} />
+		<ModalDialog isOpen={isOpen} closeModal={closeModal} contentLabel='Descargar e importar notas' content={<Dialog />} />
 		</>
 	)
 }
