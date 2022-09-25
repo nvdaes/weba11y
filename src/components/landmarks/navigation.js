@@ -7,6 +7,7 @@ const Navigation = () => {
 		<details>
 		<summary><h2 id="toc">Tabla de contenido</h2></summary>
 		<ul>
+		<li><InternalLink href="#eval" contents="Consideraciones sobre la evaluación de accesibilidad"/></li>
 		<li><InternalLink href="#perceivable" contents="Perceptible"/></li>
 		<ul>
 		<li><InternalLink href="#textAlternatives" contents="Alternativas de texto" /></li>
