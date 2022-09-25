@@ -11,4 +11,13 @@ Wcag.defaultProps = {
 	version: "2.1"
 }
 
-export { Wcag };
+const Nvda = () => {
+	return (
+	<>
+		<abbr title="Non Visual Desktop Access">NVDA</abbr>
+		</>
+	)
+}
+
+export { Wcag, Nvda };
+

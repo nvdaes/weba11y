@@ -1,3 +1,4 @@
+import Evaluation from '../complex/evaluation';
 import Perceivable from '../complex/perceivable';
 import TextAlternatives from '../complex/textAlternatives';
 import NonTextContent from '../complex/nonTextContent';
@@ -37,6 +38,7 @@ const Main = () => {
 	return (
 	<>
 		<main>
+		<Evaluation />
 		<Perceivable />
 		<TextAlternatives />
 		<NonTextContent />
