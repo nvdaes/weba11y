@@ -1,5 +1,5 @@
 import ExternalLink from '../single/externalLink';
-import { Nvda } from '../single/abbrs';
+import { Wcag, Nvda } from '../single/abbrs';
 
 const Evaluation = () => {
 	return (
@@ -19,6 +19,14 @@ const Evaluation = () => {
 		<li>Desactiva el seguimiento del ratón (<kbd>NVDA+m</kbd>).</li>
 		<li>Desde el diálogo de bienvenida, disponible en el submenú Ayuda del menú NVDA, puedes elegir si la tecla <kbd>bloqueo de mayúsculas</kbd> se utilizará como tecla modificadora NVDA y la disposición del teclado (de escritorio o portátil). También podrás desmarcar la casilla de verificación correspondiente para que este diálogo no se muestre cada vez que se inicie el lector de pantalla.</li>
 		<li>Desde el diálogo Gestos de entrada, disponible en el submenú Preferencias del menú NVDA, puedes configurar gestos para activar y desactivar la cortina de pantalla y el visualizador braille.</li>
+		</ul>
+		<p>Al evaluar un documento, página o sitio web podemos tener en cuenta tanto nuestra experiencia global como en relación a cada uno de los criterios aplicables de las <Wcag />.</p>
+		<p>Existen cuatro criterios a los que debemos prestar especial atención, ya que, como se menciona en el <ExternalLink href="https://www.w3.org/TR/WCAG21/#cc5" contents="requisito de conformidad 5.5 de las pautas de accesibilidad" />, su incumplimiento puede interferir con cualquier uso de la página:</p>
+		<ul>
+		<li>1.4.2: Control de audio;</li>
+		<li>2.1.2: Evitar que el teclado quede atrapado;</li>
+		<li>2.3.1: Tres parpadeos o límite inferior;</li>
+		<li>pausar, ocultar, detener.</li>
 		</ul>
 		</>
 	)
