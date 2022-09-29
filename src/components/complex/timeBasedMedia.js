@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/media-has-caption */
+
 import ExternalLink from '../single/externalLink';
 import Note from '../single/note';
 
