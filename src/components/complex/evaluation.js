@@ -25,8 +25,8 @@ const Evaluation = () => {
 		<ul>
 		<li>1.4.2: Control de audio;</li>
 		<li>2.1.2: Evitar que el teclado quede atrapado;</li>
-		<li>2.3.1: Tres parpadeos o límite inferior;</li>
-		<li>pausar, ocultar, detener.</li>
+		<li>2.2.2: Pausar, ocultar, detener;</li>
+		<li>2.3.1: Tres parpadeos o límite inferior.</li>
 		</ul>
 		</>
 	)
