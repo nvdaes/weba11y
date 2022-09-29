@@ -60,7 +60,7 @@ const [reportResults, setReportResults] = useState("status");
 		</blockquote>
 		<form aria-labelledby="statusMessages" onSubmit={handleSubmit} onReset={handleReset}>
 		<Checkbox label="Silenciar indicación de resultados" onChange={handleCheckboxChange} />		<label>Introducir texto para buscar muebles (requerido):
-		<input type="search" required role="search" onChange={handleTextboxChange} />
+		<input type="search" required onChange={handleTextboxChange} />
 		</label>
 		<input type="submit" value="Buscar" />
 		<input type="reset" value="Mostrar todos los elementos (5)" />
