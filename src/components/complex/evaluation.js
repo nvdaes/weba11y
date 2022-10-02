@@ -33,15 +33,15 @@ const Evaluation = () => {
 		<li>Interrumpir y pausar la voz (<kbd>control</kbd> y <kbd>shift</kbd>).</li>
 		<li>Modo exploración y modo foco.</li>
 		<li>Características de elementos como enlaces, botones, cuadros de edición, casillas de verificación, tablas, etc.</li>
-		<li>Lista de elementos (<kbd>NVDA+f7</kbd>, búsqueda en modo exploración (<kbd>NVDA+control+f</kbd>) y navegación con una sola letra (kbd>b</kbd> para ir a botones, <kbd>h</kbd> para encabezados, etc).</li>
+		<li>Lista de elementos (<kbd>NVDA+f7</kbd>), búsqueda en modo exploración (<kbd>NVDA+control+f</kbd>) y navegación con una sola letra (<kbd>b</kbd> para ir a botones, <kbd>h</kbd> para encabezados, etc.).</li>
 		</ul>
 		<p>Al evaluar un documento, página o sitio web podemos tener en cuenta tanto nuestra experiencia global como en relación a cada uno de los criterios aplicables de las <Wcag />.</p>
 		<p>Existen cuatro criterios a los que debemos prestar especial atención, ya que, como se menciona en el <ExternalLink href="https://www.w3.org/TR/WCAG21/#cc5" contents="requisito de conformidad 5.5 de las pautas de accesibilidad" />, su incumplimiento puede interferir con cualquier uso de la página:</p>
 		<ul>
 		<li>1.4.2: Control de audio;</li>
 		<li>2.1.2: Evitar que el teclado quede atrapado;</li>
-		<li>2.3.1: Tres parpadeos o límite inferior;</li>
-		<li>pausar, ocultar, detener.</li>
+		<li>2.2.2: Pausar, ocultar, detener;</li>
+		<li>2.3.1: Tres parpadeos o límite inferior.</li>
 		</ul>
 		<p>Las técnicas de evaluación elegidas dependerán de factores como el tipo de elementos del contenido que queramos evaluar, si se ha elaborado considerando la accesibilidad desde el inicio, etc.</p>
 		<p>Consulta este <ExternalLink href="https://daisy.org/info-help/guidance-training/daisy-tools/creating-accessible-word-documents/" contents="documento con información sobre evaluación de accesibilidad" />.</p>
