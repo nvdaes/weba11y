@@ -45,8 +45,11 @@ const Evaluation = () => {
 		</ul>
 		<p>Las técnicas de evaluación elegidas dependerán de factores como el tipo de elementos del contenido que queramos evaluar, si se ha elaborado considerando la accesibilidad desde el inicio, etc.</p>
 		<p>Consulta este <ExternalLink href="https://daisy.org/info-help/guidance-training/daisy-tools/creating-accessible-word-documents/" contents="documento con información sobre evaluación de accesibilidad" />.</p>
+		<p>Además, para ver un ejemplo de cómo el tipo de documento puede afectar a la experiencia de lectura, mira esta
+		<ExternalLink href="https://daisy.org/info-help/time-to-use-the-modern-digital-publishing-format" contents="comparación entre .epub y .pdf" />.
+		</p>
 		</>
-	)
+		)
 }
 
 export default Evaluation;
