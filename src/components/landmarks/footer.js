@@ -1,4 +1,5 @@
 import ExternalLink from '../single/externalLink';
+import LastUpdate from '../single/lastUpdate';
 
 const Footer = () => {
 	return (
@@ -15,7 +16,7 @@ const Footer = () => {
 		</address>
 		</section>
 		<p><ExternalLink href="https://github.com/nvdaes/weba11y/" contents="Código fuente en GitHub" /></p>
-		<p>Última actualización: <time dateTime="2022-10-06">6 de octubre de 2022</time></p>
+		<LastUpdate />
 		</footer>
 		</>
 	);
