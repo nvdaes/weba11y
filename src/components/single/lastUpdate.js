@@ -5,7 +5,7 @@ const LastUpdate = () => {
 	const day = date.getDate();
 	return (
 		<>
-		<p>Última actualización: <time datetime={`${year}-${month}-${day}`}>{day}/{month}/{year}</time></p>
+		<p>Última actualización: <time dateTime={`${year}-${month}-${day}`}>{day}/{month}/{year}</time></p>
 		</>
 	)
 }
