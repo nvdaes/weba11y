@@ -7,14 +7,13 @@ import Relationships from './relationships';
 describe('Relationships', () => {
 	test('renders Relationships component', () => {
 		render(<Relationships />);
-		expect(screen.getByLabelText(/Eliminar información semántica en tabla/i)).toBeInTheDocument();
 		const checkbox = screen.getByRole('checkbox');
 		expect(checkbox).toBeInTheDocument();
-		expect(checkbox.checked).toEqual(false);
+		expect(checkbox).not.toBeChecked();
 		const table = screen.getByRole('table');
 		expect(table).toBeInTheDocument();
 		userEvent.click(checkbox);
-		expect(checkbox.checked).toEqual(true);
+		expect(checkbox).toBeChecked();
 		expect(screen.queryByRole('table')).toBeNull();
 	});
 });

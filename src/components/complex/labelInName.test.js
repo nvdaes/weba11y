@@ -1,15 +1,13 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 
 import LabelInName from './labelInName';
 
 describe('LabelInName', () => {
 	test('renders LabelInName component', () => {
 		render(<LabelInName />);
-		expect(screen.getByLabelText('Cambiar nombre accesible:')).toBeInTheDocument();
 		const textbox = screen.getByRole('textbox');
-		fireEvent.change(textbox, {
-			target: { value: 'JavaScript' }
-		});
+		userEvent.type(textbox, 'JavaScript');
 		expect(textbox.getAttribute('aria-label')).toBe('JavaScript');
 	});
 });

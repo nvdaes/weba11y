@@ -6,11 +6,12 @@ import OnInput from './onInput';
 describe('OnInput', () => {
 	test('renders OnInput component', () => {
 		render(<OnInput />);
-		expect(screen.getByLabelText(/Elige un tipo de entretenimiento:/i)).toBeInTheDocument();
+		const combobox = screen.getByRole('combobox');
+		expect(combobox).toBeInTheDocument();
 		const checkbox = screen.getByRole('checkbox');
 		expect(checkbox).toBeInTheDocument();
-		expect(checkbox.checked).toEqual(false);
+		expect(checkbox).not.toBeChecked();
 		userEvent.click(checkbox);
-		expect(checkbox.checked).toEqual(true);
+		expect(checkbox).toBeChecked();
 			});
 });

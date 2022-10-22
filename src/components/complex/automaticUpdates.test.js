@@ -6,11 +6,16 @@ import AutomaticUpdates from './automaticUpdates';
 describe('AutomaticUpdates', () => {
 	test('renders AutomaticUpdates component', () => {
 		render(<AutomaticUpdates />);
-		expect(screen.getByLabelText(/Activar cronómetro/i)).toBeInTheDocument();
 		const checkbox = screen.getByRole('checkbox');
 		expect(checkbox).toBeInTheDocument();
-		expect(checkbox.checked).toEqual(false);
+		expect(checkbox).not.toBeChecked();
+		const spinbutton = screen.getByRole('spinbutton');
+		expect(spinbutton).toBeInTheDocument();
+		userEvent.type(spinbutton, '2');
+		expect(spinbutton).toHaveValue(2);
 		userEvent.click(checkbox);
-		expect(checkbox.checked).toEqual(true);
-			});
+		expect(checkbox).toBeChecked();
+		userEvent.type(spinbutton, '3');
+		expect(spinbutton).toHaveValue(2);
+			});	
 });

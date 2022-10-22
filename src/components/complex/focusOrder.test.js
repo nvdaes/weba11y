@@ -6,11 +6,10 @@ import FocusOrder from './focusOrder';
 describe('FocusOrder', () => {
 	test('renders FocusOrder component', () => {
 		render(<FocusOrder />);
-		expect(screen.getByLabelText('Orden de foco incorrecto (el enlace Evaluating Web Accessibility Overview será difícil de encontrar)')).toBeInTheDocument();
 		const checkbox = screen.getByRole('checkbox');
 		expect(checkbox).toBeInTheDocument();
-		expect(checkbox.checked).toEqual(false);
+		expect(checkbox).not.toBeChecked();
 		userEvent.click(checkbox);
-		expect(checkbox.checked).toEqual(true);
+		expect(checkbox).toBeChecked();
 			});
 });

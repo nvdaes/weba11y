@@ -8,8 +8,8 @@ describe('StatusMessages', () => {
 		render(<StatusMessages />);
 		const checkbox = screen.getByRole('checkbox');
 		expect(checkbox).toBeInTheDocument();
-		expect(checkbox.checked).toEqual(false);
+		expect(checkbox).not.toBeChecked();
 		userEvent.click(checkbox);
-		expect(checkbox.checked).toEqual(true);
+		expect(checkbox).toBeChecked();
 	});
 });
